@@ -87,12 +87,9 @@ namespace Project\Model;
              $inputFilter->add(array(
              		'name'     => 'budget',
              		'required' => true,
-             		'filters'  => array(
-             				array('name' => 'Int'),
-             		),
+          
              ));
              
-
              $this->inputFilter = $inputFilter;
          }
 

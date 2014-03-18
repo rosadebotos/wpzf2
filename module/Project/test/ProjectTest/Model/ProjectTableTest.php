@@ -59,7 +59,7 @@ class ProjectTableTest extends PHPUnit_Framework_TestCase
     
     public function testSaveProjectWillInsertNewProjectsIfTheyDontAlreadyHaveAnId()
     {
-    	$projectData = array('name' => 'The Military Wives', 'description' => 'In My Dreams', 'budget' =>'100');
+    	$projectData = array('name' => 'The Military Wives', 'description' => 'In My Dreams', 'budget' => '100');
     	$project     = new Project();
     	$project->exchangeArray($projectData);
     
@@ -74,7 +74,7 @@ class ProjectTableTest extends PHPUnit_Framework_TestCase
     
     public function testSaveProjectWillUpdateExistingProjectsIfTheyAlreadyHaveAnId()
     {
-    	$projectData = array('idproject' => 123, 'name' => 'The Military Wives', 'description' => 'In My Dreams', 'budget' =>'100');
+    	$projectData = array('idproject' => 123, 'name' => 'The Military Wives', 'description' => 'In My Dreams', 'budget' => '100');
     	$project     = new Project();
     	$project->exchangeArray($projectData);
     
@@ -90,7 +90,7 @@ class ProjectTableTest extends PHPUnit_Framework_TestCase
     	->will($this->returnValue($resultSet));
     	$mockTableGateway->expects($this->once())
     	->method('update')
-    	->with(array('name' => 'The Military Wives', 'description' => 'In My Dreams' , 'budget' =>'100'),
+    	->with(array('name' => 'The Military Wives', 'description' => 'In My Dreams', 'budget' => '100'),
     			array('idproject' => 123));
     
     	$projectTable = new ProjectTable($mockTableGateway);

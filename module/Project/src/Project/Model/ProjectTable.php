@@ -44,7 +44,7 @@ class ProjectTable
 			if ($this->getProject($idproject)) {
 				$this->tableGateway->update($data, array('idproject' => $idproject));
 			} else {
-				throw new \Exception('Project idproject does not exist');
+				throw new \Exception('Project id does not exist');
 			}
 		}
 	}
