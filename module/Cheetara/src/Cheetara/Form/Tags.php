@@ -14,7 +14,7 @@ class ChangeEmail extends ProvidesEventsForm
         parent::__construct($name);
 
         $this->add(array(
-            'name' => 'idcategory',
+            'name' => 'idtag',
             'options' => array(
                 'label' => '',
             ),
@@ -24,35 +24,18 @@ class ChangeEmail extends ProvidesEventsForm
         ));
 
         $this->add(array(
-            'name' => 'category',
+            'name' => 'tag',
             'options' => array(
-                'label' => 'Category',
+                'label' => 'Tag',
             ),
             'attributes' => array(
                 'type' => 'text',
             ),
         ));
 
-        $this->add(array(
-            'name' => 'parent_idcategory',
-            'options' => array(
-                'label' => 'Verify New Email',
-            ),
-            'attributes' => array(
-                'type' => 'text',
-            ),
-        ));
+      
 
-        $this->add(array(
-            'name' => 'credential',
-            'options' => array(
-                'label' => 'Password',
-            ),
-            'attributes' => array(
-                'type' => 'password',
-            ),
-        ));
-
+       
         $this->getEventManager()->trigger('init', $this);
     }
 
