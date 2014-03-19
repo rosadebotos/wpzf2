@@ -5,7 +5,7 @@ return array(
             'Cheetara\Controller\Index' => 'Cheetara\Controller\IndexController',
         ),
     ),
-		
+
 		'router' => array(
 				'routes' => array(
 						'cheetara' => array(
@@ -43,9 +43,11 @@ return array(
 						),
 				),
 		),
-		'view_manager' => array(
-				'template_path_stack' => array(
-						'Cheetara' => __DIR__ . '/../view',
-				),
-		),
-		);
+
+    'view_manager' => array(
+        'template_path_stack' => array(
+            'Cheetara' => __DIR__ . '/../view',
+        ),
+    ),
+);
+

@@ -6,7 +6,7 @@ use Zend\Form\Form;
 use Zend\Form\Element;
 use ZfcBase\Form\ProvidesEventsForm;
 
-class Base extends ProvidesEventsForm
+class Cheats extends ProvidesEventsForm
 {
     public function __construct()
     {

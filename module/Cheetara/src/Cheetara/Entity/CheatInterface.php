@@ -5,92 +5,92 @@ namespace Cheetara\Entity;
 interface CheatInterface
 {
     /**
-     * Get id.
+     * Get idcheat.
      *
      * @return int
      */
     public function getIdcheat();
 
     /**
-     * Set id.
+     * Set idcheat.
      *
-     * @param int $id
-     * @return UserInterface
+     * @param int $idcheat
+     * @return CheatInterface
      */
     public function setIdcheat($idcheat);
 
     /**
-     * Get username.
+     * Get name.
      *
      * @return string
      */
     public function getName();
 
     /**
-     * Set username.
+     * Set name.
      *
-     * @param string $username
-     * @return UserInterface
+     * @param string $name
+     * @return CheatInterface
      */
-    public function setName($username);
+    public function setName($name);
 
     /**
-     * Get email.
+     * Get code.
      *
      * @return string
      */
     public function getCode();
 
     /**
-     * Set email.
+     * Set code.
      *
-     * @param string $email
-     * @return UserInterface
+     * @param string $code
+     * @return CheatInterface
      */
     public function setCode($code);
 
     /**
-     * Get displayName.
+     * Get description.
      *
      * @return string
      */
     public function getDescription();
 
     /**
-     * Set displayName.
+     * Set description.
      *
-     * @param string $displayName
-     * @return UserInterface
+     * @param string $description
+     * @return CheatInterface
      */
     public function setDescription($description);
 
     /**
-     * Get password.
+     * Get filename.
      *
-     * @return string password
+     * @return string filename
      */
     public function getFilename();
 
     /**
      * Set password.
      *
-     * @param string $password
-     * @return UserInterface
+     * @param string $filename
+     * @return CheatInterface
      */
     public function setFilename($filename);
 
     /**
-     * Get state.
+     * Get categories_idcategory.
      *
      * @return int
      */
     public function getCategories_idcategory();
 
     /**
-     * Set state.
+     * Set Categories_idcategory.
      *
-     * @param int $state
-     * @return UserInterface
+     * @param int $Categories_idcategory
+     * @return CheatInterface
      */
     public function setCategories_idcategory($categories_idcategory);
 

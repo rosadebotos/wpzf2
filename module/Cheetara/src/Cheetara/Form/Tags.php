@@ -6,7 +6,7 @@ use ZfcBase\Form\ProvidesEventsForm;
 use ZfcUser\Options\RegistrationOptionsInterface;
 use ZfcUser\Options\AuthenticationOptionsInterface;
 
-class ChangeEmail extends ProvidesEventsForm
+class Tags extends ProvidesEventsForm
 {
     public function __construct($name = null, AuthenticationOptionsInterface $options)
     {

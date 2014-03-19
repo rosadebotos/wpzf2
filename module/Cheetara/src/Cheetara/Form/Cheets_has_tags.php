@@ -6,7 +6,7 @@ use ZfcBase\Form\ProvidesEventsForm;
 use ZfcUser\Options\RegistrationOptionsInterface;
 use ZfcUser\Options\AuthenticationOptionsInterface;
 
-class ChangeEmail extends ProvidesEventsForm
+class Cheat_has_Tags extends ProvidesEventsForm
 {
     public function __construct($name = null, AuthenticationOptionsInterface $options)
     {
@@ -24,8 +24,7 @@ class ChangeEmail extends ProvidesEventsForm
             ),
         ));
 
-      
-
+     
        
         $this->getEventManager()->trigger('init', $this);
     }
